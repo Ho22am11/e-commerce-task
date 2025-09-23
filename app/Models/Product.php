@@ -12,4 +12,9 @@ class Product extends Model
         'price',
         'stock_quantity',
     ];
+
+     public function hasStock(int $quantity): bool
+    {
+        return $this->stock_quantity >= $quantity;
+    }
 }

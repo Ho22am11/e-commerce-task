@@ -31,7 +31,6 @@ Class HandleService {
         ]);
         $attempt->save();
 
-
     }
 
 }

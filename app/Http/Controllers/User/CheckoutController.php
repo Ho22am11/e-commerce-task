@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\User;
 
+use App\Events\OrderPaid;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\OrderResource;
 use App\Models\CartItem;
@@ -11,9 +12,13 @@ use App\Models\PaymentAttempt;
 use App\Models\PaymobTransaction;
 use App\Models\Product;
 use App\Services\HandleService;
+use App\Services\NotificationService;
 use App\Services\OrderService;
 use App\Services\PaymentServices;
 use Illuminate\Http\Request;
+
+
+use Illuminate\Support\Facades\Log;
 
 class CheckoutController extends Controller
 {
@@ -35,8 +40,13 @@ class CheckoutController extends Controller
     }
 
 
-      public function handle(Request $request , HandleService $handle_service){
+      public function handle(Request $request , HandleService $handle_service , NotificationService $notification_service){
 
         $handle_service->handle($request);
+
+        $data = $request->all();
+
+        $notification_service->send($data);
+
      }
 }

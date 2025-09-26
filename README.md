@@ -50,8 +50,8 @@ This project is a professional e-commerce backend built with Laravel 12 and php 
 	 ```
 
 ## admin 
-	 ```bash
+ ```bash
      email : admin@gmailcom
      password : 123456
-     ```
+ ```
 

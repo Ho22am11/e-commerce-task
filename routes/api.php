@@ -7,6 +7,10 @@ use App\Http\Controllers\User\CartItemController;
 use App\Http\Controllers\User\CheckoutController;
 use Illuminate\Support\Facades\Route;
 
+
+use App\Http\Controllers\admin\AuthController;
+
+
 Route::post('register' , [AuthControlller::class , 'register']);
 Route::post('login', [AuthControlller::class , 'login']);
 Route::post('logout', [AuthControlller::class , 'logout']);
@@ -26,3 +30,7 @@ Route::match(['GET', 'POST'], '/paymob/webhook', [CheckoutController::class, 'ha
 Route::middleware('admin')->group(function () {
     Route::resource('prodects', ProductControlller::class);
 });
+
+
+
+Route::post('admin/login', [AuthController::class , 'login']);

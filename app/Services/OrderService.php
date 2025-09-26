@@ -21,7 +21,7 @@ Class OrderService {
 
         $order = Order::create([
             'user_id' => $userId ,
-        ]); 
+        ]);
 
         $total = 0 ;
 
@@ -40,7 +40,6 @@ Class OrderService {
                 'quantity'   => $item->quantity,
                 'price'      => $product->price,
             ]);
-
 
             $product->decrement('stock_quantity', $item->quantity);
 

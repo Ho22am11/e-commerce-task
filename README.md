@@ -24,7 +24,7 @@ This project is a professional e-commerce backend built with Laravel 12 and php 
 	- Manage products, orders, and users
 	- View sales and order statistics
 - **Notifications**
-	- Order and payment notifications for users and admins
+	- Order and payment notifications for users by pusher
 - **API Structure**
 	- RESTful API endpoints
 	- Request validation and resourceful responses

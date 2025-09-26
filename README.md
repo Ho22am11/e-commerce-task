@@ -2,7 +2,7 @@
 # E-Commerce Task
 
 ## Overview
-This project is a professional e-commerce backend built with Laravel. It provides a robust foundation for online shopping platforms, supporting essential e-commerce features and scalable architecture.
+This project is a professional e-commerce backend built with Laravel 12 and php 8.3.24
 
 ## Features
 - **User Authentication & Authorization**
@@ -31,21 +31,12 @@ This project is a professional e-commerce backend built with Laravel. It provide
 - **Testing**
 	- Unit and feature tests using Pest and PHPUnit
 
-## Project Structure
-- `app/` - Main application logic (Models, Controllers, Services, etc.)
-- `routes/` - API and web route definitions
-- `database/` - Migrations, seeders, and factories
-- `config/` - Configuration files
-- `public/` - Entry point and public assets
-- `resources/` - Views and frontend assets
-- `tests/` - Automated tests
 
 ## Getting Started
 1. **Clone the repository**
 2. **Install dependencies**
 	 ```bash
 	 composer install
-	 npm install
 	 ```
 3. **Configure environment**
 	 - Copy `.env.example` to `.env` and update settings
@@ -58,12 +49,9 @@ This project is a professional e-commerce backend built with Laravel. It provide
 	 php artisan serve
 	 ```
 
-## API Documentation
-- All endpoints are prefixed with `/api`
-- Use tools like Postman to test API endpoints
+## admin 
+	 ```bash
+     email : admin@gmailcom
+     password : 123456
+     ```
 
-## Contribution
-Feel free to fork the repository and submit pull requests. For major changes, please open an issue first to discuss what you would like to change.
-
-## License
-This project is open-source and available under the [MIT License](LICENSE).

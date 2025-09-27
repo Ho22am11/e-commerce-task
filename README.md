@@ -2,7 +2,7 @@
 # E-Commerce Task
 
 ## Overview
-This project is a professional e-commerce backend built with Laravel 12 and php 8.3.24
+This project is a  e-commerce backend built with Laravel 12 and php 8.3.24
 
 ## Features
 - **User Authentication & Authorization**
@@ -10,10 +10,8 @@ This project is a professional e-commerce backend built with Laravel 12 and php 
 	- JWT-based authentication
 - **Product Management**
 	- CRUD operations for products
-	- Product listing, details, and search
 - **Cart System**
 	- Add, update, and remove items from the cart
-	- Cart persistence per user
 - **Order Management**
 	- Place orders from cart
 	- View order history and order details
@@ -21,17 +19,14 @@ This project is a professional e-commerce backend built with Laravel 12 and php 
 	- Payment processing with Paymob
 	- Payment attempt tracking and transaction logging
 - **Admin Panel**
-	- Manage products, orders, and users
-	- View sales and order statistics
+	- Manage products, orders
 - **Notifications**
 	- Order and payment notifications for users by pusher
-- **API Structure**
-	- RESTful API endpoints
-	- Request validation and resourceful responses
 - **Testing**
 	- Unit and feature tests using Pest and PHPUnit
+    - for Login and  Add to Cart 
 
-
+ 
 ## Getting Started
 1. **Clone the repository**
 2. **Install dependencies**
